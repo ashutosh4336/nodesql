@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Apple Mac Pro",
+    "price": 4200000,
+    "description": "This the best watch in market from apple",
+    "image_url": "https://www.imore.com/sites/imore.com/files/topic_images/2015/topic_apple_watch_apps.png"
+  },
+  {
+    "title": "Apple MacBook Pro 16'",
+    "price": 180000,
+    "description": "This the best Laptop in market from apple",
+    "image_url": "https://www.istore.co.za/media/wysiwyg/ZAEN_MacBook_Pro_Q117_Product_Page_1_02-2.png"
+  },
+  {
+    "title": "Apple iMac",
+    "price": 543000,
+    "description": "This the best Desktop Grade Mac from apple",
+    "image_url": "http://www.mojocomputers.net/wp-content/uploads/2018/05/imac.png"
+  },
+  {
+    "title": "Apple Mac Mini",
+    "price": 80000,
+    "description": "This the best Portable Mac",
+    "image_url": "https://help.apple.com/assets/5C82DE24094622A5397E79C6/5D016BB6680CE25E3982B453/en_US/679c04d4d48a0e5da9d0c9234cfcc8b0.png"
+  },
+  {
+    "title": "Apple Watch",
+    "price": 80000,
+    "description": "This the best Portable Mac",
+    "image_url": "https://luminfire.com/wp-content/uploads/2014/09/apple_watch.png"
+  },
+  {
+    "title": "Apple iPad Pro Max",
+    "price": 150000,
+    "description": "This the best Portable Mac",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/IPad_3.png"
+  }
+]

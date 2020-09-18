@@ -1,0 +1,645 @@
+{
+	"info": {
+		"_postman_id": "6a19b1a0-7af4-4d3f-96e3-fb38d2f81c90",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get Single User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/customers/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/customers",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Shraddha Kapoor\",\n    \"username\": \"shraddha4336\",\n    \"email\": \"shraddha@google.com\",\n    \"password\": \"123456789\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/customers",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"customers"
+							]
+						},
+						"description": "`127.0.0.1:5000/api/v1/customers`"
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Tempo User\",\n    \"email\": \"temp@google.com\",\n    \"username\" : \"temp4336\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/customers/7",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/customers/7",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"7"
+							]
+						},
+						"description": "`127.0.0.1:5000/api/v1/customers/10`"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"<script>alert('Shraddha')</script>\",\n    \"username\": \"shraddha43360\",\n    \"email\": \"shraddha1@google.com\",\n    \"password\": \"123456789\"\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/customers",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Add User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"name\": \"<html onMouseLeave html onMouseLeave='javascript:javascript:alert(1)'></html onMouseLeave>\",\n    \"username\": \"xss4336\",\n    \"email\": \"xss@google.com\",\n    \"password\": \"123456789\"\n  },\n  {\n    \"name\": \"Shraddha Kapoor\",\n    \"username\": \"shraddha4336\",\n    \"email\": \"shraddha@google.com\",\n    \"password\": \"123456789\"\n  },\n  {\n    \"name\": \"Ashutosh Panda\",\n    \"username\": \"ashutosh4336\",\n    \"email\": \"ashutosh@google.com\",\n    \"password\": \"123456789\"\n  },\n  {\n    \"name\": \"Deepika Panda\",\n    \"username\": \"deepika95\",\n    \"email\": \"deepika@google.com\",\n    \"password\": \"123456789\"\n  },\n  {\n    \"name\": \"Jhon Doe\",\n    \"username\": \"jhon4336\",\n    \"email\": \"jhon@google.com\",\n    \"password\": \"123456789\"\n  },\n  {\n    \"name\": \"Alice Green\",\n    \"username\": \"alice4336\",\n    \"email\": \"alice@google.com\",\n    \"password\": \"123456789\"\n  },\n  {\n    \"name\": \"Bob Smith  \",\n    \"username\": \"bob4336\",\n    \"email\": \"bob@google.com\",\n    \"password\": \"123456789\"\n  },\n  {\n    \"name\": \"Temp User\",\n    \"username\": \"temp4336\",\n    \"email\": \"temp@google.com\",\n    \"password\": \"123456789\"\n  }\n]\n"
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/customers/internal",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"customers",
+								"internal"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get All Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						},
+						"description": "`127.0.0.1:5000/api/v1/products`"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Apple Watch\",\n    \"price\": 80000,\n    \"description\": \"This the best Portable Mac\",\n    \"image_url\": \"https://luminfire.com/wp-content/uploads/2014/09/apple_watch.png\",\n    \"userId\": 1\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						},
+						"description": "`127.0.0.1:5000/api/v1/products`"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/products/3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Test me 2\",\n    \"price\": 180000,\n    \"description\": \"This the best Laptop in market from apple\",\n    \"image_url\": \"https://www.istore.co.za/media/wysiwyg/ZAEN_MacBook_Pro_Q117_Product_Page_1_02-2.png\",\n    \"userId\": 1\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/products/5",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Test me 2\",\n    \"price\": 180000,\n    \"description\": \"This the best Laptop in market from apple\",\n    \"image_url\": \"https://www.istore.co.za/media/wysiwyg/ZAEN_MacBook_Pro_Q117_Product_Page_1_02-2.png\",\n    \"userId\": 1\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/products/3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Place Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 3,\n    \"productId\": 4\n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/orders",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"orders"
+							]
+						},
+						"description": "`127.0.0.1:5000/api/v1/orders`"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Item By User",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\":1,\n    \"productId\": 1 \n}"
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/orders//customer/6",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"",
+								"customer",
+								"6"
+							]
+						},
+						"description": "`127.0.0.1:5000/api/v1/orders/purchaseditems/1`"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all User By Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/orders/customer/7",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"customer",
+								"7"
+							]
+						},
+						"description": "`127.0.0.1:5000/api/v1/orders/product/1`"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Prodcut by Purchase Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/orders/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								""
+							]
+						},
+						"description": "`127.0.0.1:5000/api/v1/orders/`"
+					},
+					"response": []
+				},
+				{
+					"name": "All Order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/orders/all",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"all"
+							]
+						},
+						"description": "`127.0.0.1:5000/api/v1/orders/all`"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cancelled\" : true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/orders/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"1"
+							]
+						},
+						"description": "`127.0.0.1:5000/api/v1/orders/1`"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Order",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/orders/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"1"
+							]
+						},
+						"description": "`127.0.0.1:5000/api/v1/orders/1`"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all User who Purchased the Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:5000/api/v1/orders/product/4",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"orders",
+								"product",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

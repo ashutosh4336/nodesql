@@ -1,0 +1,50 @@
+[
+  {
+    "name": "</script><script>alert(document.cookie)</script>",
+    "username": "xss007",
+    "email": "xss@google.com",
+    "password": "123456789"
+  },
+  {
+    "name": "Shraddha Kapoor",
+    "username": "shraddha007",
+    "email": "shraddha@google.com",
+    "password": "123456789"
+  },
+  {
+    "name": "Ashutosh Panda",
+    "username": "ashutosh007",
+    "email": "ashutosh@google.com",
+    "password": "123456789"
+  },
+  {
+    "name": "Deepika Panda",
+    "username": "deepika95",
+    "email": "deepika@google.com",
+    "password": "123456789"
+  },
+  {
+    "name": "Jhon Doe",
+    "username": "jhon007",
+    "email": "jhon@google.com",
+    "password": "123456789"
+  },
+  {
+    "name": "Alice Green",
+    "username": "alice007",
+    "email": "alice@google.com",
+    "password": "123456789"
+  },
+  {
+    "name": "Bob Smith  ",
+    "username": "bob007",
+    "email": "bob@google.com",
+    "password": "123456789"
+  },
+  {
+    "name": "Temp User",
+    "username": "temp007",
+    "email": "temp@google.com",
+    "password": "123456789"
+  }
+]
